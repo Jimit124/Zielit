@@ -33,20 +33,55 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 revealEls.forEach(el => io.observe(el));
 
-// Contact form -> mailto
+// Contact form -> real submission via FormSubmit.co, with mailto fallback
 const form = document.getElementById('contactForm');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const data = new FormData(form);
-  const name = data.get('name') || '';
-  const email = data.get('email') || '';
-  const company = data.get('company') || '';
-  const channel = data.get('channel') || '';
-  const message = data.get('message') || '';
+const submitBtn = document.getElementById('submitBtn');
+const formNote = document.getElementById('formNote');
+const formSuccess = document.getElementById('formSuccess');
+const formError = document.getElementById('formError');
 
-  const subject = encodeURIComponent(`Marketing inquiry — ${channel}`);
-  const body = encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nChannel: ${channel}\n\n${message}`
-  );
-  window.location.href = `mailto:info@zielit.com?subject=${subject}&body=${body}`;
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  formError.style.display = 'none';
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+
+  const data = new FormData(form);
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (!res.ok) throw new Error('Bad response');
+
+    form.reset();
+    formNote.style.display = 'none';
+    formSuccess.style.display = 'block';
+    submitBtn.textContent = 'Send message';
+    submitBtn.disabled = false;
+
+    setTimeout(() => {
+      formSuccess.style.display = 'none';
+      formNote.style.display = 'block';
+    }, 7000);
+
+  } catch (err) {
+    // Network/service failed — fall back to opening the visitor's email client
+    const name = data.get('name') || '';
+    const email = data.get('email') || '';
+    const company = data.get('company') || '';
+    const channel = data.get('channel') || '';
+    const message = data.get('message') || '';
+    const subject = encodeURIComponent(`Marketing inquiry — ${channel}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nChannel: ${channel}\n\n${message}`
+    );
+    window.location.href = `mailto:info@zielit.com?subject=${subject}&body=${body}`;
+    submitBtn.textContent = 'Send message';
+    submitBtn.disabled = false;
+    formError.style.display = 'block';
+  }
 });

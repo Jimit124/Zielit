@@ -493,7 +493,7 @@
         </div>
       </div>
 
-      <form class="contact-form reveal reveal-delay-2" id="contactForm">
+      <form class="contact-form reveal reveal-delay-2" id="contactForm" action="https://formsubmit.co/info@zielit.com" method="POST">
         <div class="form-row">
           <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your full name" required></div>
           <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@company.com" required></div>
@@ -508,6 +508,7 @@
               <option>DM Marketing</option>
               <option>Privacy Assessment</option>
               <option>AI Enablement</option>
+              <option>AI Governance</option>
               <option>Not sure yet</option>
             </select>
           </div>
@@ -515,8 +516,17 @@
         <div class="form-row">
           <div class="field full"><label for="message">What are you trying to achieve?</label><textarea id="message" name="message" placeholder="Tell us about your audience and your goal"></textarea></div>
         </div>
-        <button type="submit" class="btn btn-primary">Send message</button>
-        <p class="form-note">This opens your email client addressed to info@zielit.com.</p>
+
+        <!-- FormSubmit.co config -->
+        <input type="hidden" name="_subject" value="New enquiry from zielit.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <button type="submit" class="btn btn-primary" id="submitBtn">Send message</button>
+        <p class="form-note" id="formNote">Your message goes straight to info@zielit.com.</p>
+        <p class="form-note" id="formSuccess" style="display:none; color:var(--signal); font-weight:600;">✓ Message sent — we'll get back to you within one business day.</p>
+        <p class="form-note" id="formError" style="display:none; color:var(--ember);">Something went wrong sending that. Please email us directly at <a href="mailto:info@zielit.com" style="color:var(--ember); text-decoration:underline;">info@zielit.com</a>.</p>
       </form>
     </div>
   </div>
