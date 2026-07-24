@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zielit — One Marketing Solution</title>
+<meta name="description" content="Zielit runs email, phone, and direct-message marketing campaigns, backed by privacy assessments and practical AI enablement — one team, every channel.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="Zielit logo">
+    </a>
+    <nav class="nav-links">
+      <a href="#services">What we do</a>
+      <a href="#process">Process</a>
+      <a href="#why">Why Zielit</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta desktop-only">
+      <a href="mailto:info@zielit.com" class="btn btn-ghost">info@zielit.com</a>
+      <a href="#contact" class="btn btn-primary">Start a conversation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">What we do</a>
+  <a href="#process">Process</a>
+  <a href="#why">Why Zielit</a>
+  <a href="#careers">Careers</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="eyebrow">One marketing solution</span>
+      <h1>Marketing that reaches <em>every channel</em>, run by one team.</h1>
+      <p>Email, phone, and direct-message campaigns — planned, sent, and measured under one roof. Privacy-checked before launch. AI-enabled where it actually moves the number.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start a conversation</a>
+        <a href="#services" class="btn btn-ghost">See what we do</a>
+      </div>
+      <div class="hero-channels">
+        <span>Built for</span>
+        <div class="chips">
+          <span class="chip">Email</span>
+          <span class="chip">Phone</span>
+          <span class="chip">Direct message</span>
+          <span class="chip">Privacy</span>
+          <span class="chip">AI</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="constellation" aria-hidden="true">
+      <svg viewBox="0 0 420 420">
+        <!-- connecting lines -->
+        <path class="const-line" d="M210,210 L210,60"/>
+        <path class="const-line" d="M210,210 L340,140"/>
+        <path class="const-line" d="M210,210 L340,290"/>
+        <path class="const-line" d="M210,210 L210,360"/>
+        <path class="const-line" d="M210,210 L80,290"/>
+        <path class="const-line" d="M210,210 L80,140"/>
+        <!-- traveling pulses -->
+        <path class="const-pulse p1" d="M210,210 L210,60"/>
+        <path class="const-pulse p2" d="M210,210 L340,140"/>
+        <path class="const-pulse p3" d="M210,210 L340,290"/>
+        <path class="const-pulse p4" d="M210,210 L80,290"/>
+        <path class="const-pulse p5" d="M210,210 L80,140"/>
+
+        <!-- outer nodes -->
+        <g class="const-node">
+          <circle cx="210" cy="60" r="26" fill="#1D1A2B" stroke="rgba(255,255,255,.14)"/>
+          <text x="210" y="64" text-anchor="middle" class="const-node-label">EMAIL</text>
+        </g>
+        <g class="const-node">
+          <circle cx="340" cy="140" r="26" fill="#1D1A2B" stroke="rgba(255,255,255,.14)"/>
+          <text x="340" y="144" text-anchor="middle" class="const-node-label">PHONE</text>
+        </g>
+        <g class="const-node">
+          <circle cx="340" cy="290" r="26" fill="#1D1A2B" stroke="rgba(255,255,255,.14)"/>
+          <text x="340" y="294" text-anchor="middle" class="const-node-label">DM</text>
+        </g>
+        <g class="const-node">
+          <circle cx="210" cy="360" r="26" fill="#1D1A2B" stroke="rgba(255,255,255,.14)"/>
+          <text x="210" y="364" text-anchor="middle" class="const-node-label">AI</text>
+        </g>
+        <g class="const-node">
+          <circle cx="80" cy="290" r="26" fill="#1D1A2B" stroke="rgba(255,255,255,.14)"/>
+          <text x="80" y="294" text-anchor="middle" class="const-node-label">PRIVACY</text>
+        </g>
+        <g class="const-node">
+          <circle cx="80" cy="140" r="26" fill="#1D1A2B" stroke="rgba(255,255,255,.14)"/>
+          <text x="80" y="144" text-anchor="middle" class="const-node-label">DATA</text>
+        </g>
+
+        <!-- hub -->
+        <circle class="const-hub-ring" cx="210" cy="210" r="34" fill="none" stroke="#FF5A3C" stroke-width="1.5"/>
+        <g class="const-hub">
+          <circle cx="210" cy="210" r="34" fill="#FF5A3C"/>
+          <text x="210" y="215" text-anchor="middle" font-family="Space Grotesk" font-weight="700" font-size="13" fill="#14111F">ZIELIT</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOGO / CHANNEL MARQUEE ================= -->
+<div class="section-dark marquee-wrap">
+  <div class="marquee">
+    <div class="marquee-item">Email Marketing</div>
+    <div class="marquee-item">Phone Marketing</div>
+    <div class="marquee-item">DM Marketing</div>
+    <div class="marquee-item">Privacy Assessment</div>
+    <div class="marquee-item">AI Enablement</div>
+    <div class="marquee-item">Email Marketing</div>
+    <div class="marquee-item">Phone Marketing</div>
+    <div class="marquee-item">DM Marketing</div>
+    <div class="marquee-item">Privacy Assessment</div>
+    <div class="marquee-item">AI Enablement</div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="section section-light">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">Who we are</span>
+      <h2 style="margin-top:16px; font-size:clamp(26px,3vw,36px);">Data only matters once it changes what you do next.</h2>
+      <p style="margin-top:18px; font-size:16px; line-height:1.7; color:var(--ink-soft);">We're a data-driven marketing team that turns customer data into campaigns people actually respond to — across email, phone, and direct message. Every send is planned against your audience, checked against your privacy obligations, and measured against a number you set before we start.</p>
+      <div class="about-stats">
+        <div><strong>3</strong><span>Outreach channels under one plan</span></div>
+        <div><strong>1</strong><span>Team, start to send</span></div>
+        <div><strong>0</strong><span>Guesswork in the audience</span></div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <p class="about-quote">"The best marketing doesn't feel like marketing."</p>
+      <p style="margin-top:12px; font-family:var(--mono); font-size:13px; color:var(--ink-soft);">— Tom Fishburne</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section section-tint" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Five disciplines. One marketing solution.</h2>
+      <p>Pick a channel or run them together — every service is built to plug into the same audience data and the same reporting.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="svc-card reveal">
+        <div class="svc-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </div>
+        <h3>Email Marketing</h3>
+        <p>Lists built and segmented properly, campaigns designed to be opened, and subject lines tested before the full send goes out.</p>
+        <span class="tag">Build → Segment → Send</span>
+      </div>
+
+      <div class="svc-card reveal reveal-delay-1">
+        <div class="svc-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>Phone Marketing</h3>
+        <p>Trained callers running outbound and inbound programs on scripts tuned to your offer, with every call logged back to the record.</p>
+        <span class="tag">Script → Call → Log</span>
+      </div>
+
+      <div class="svc-card reveal reveal-delay-2">
+        <div class="svc-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3>DM Marketing</h3>
+        <p>Direct-message outreach on the platforms your audience already scrolls — X, LinkedIn, TikTok, and beyond, written to sound like a person.</p>
+        <span class="tag">Find → Message → Follow up</span>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Privacy Assessment</h3>
+        <p>An audit of what you collect, where it lives, and how it's used — so every campaign we run stays inside the rules that apply to you.</p>
+        <span class="tag">Audit → Fix → Document</span>
+      </div>
+
+      <div class="svc-card reveal reveal-delay-1">
+        <div class="svc-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h.01M15 9h.01M9 15c.83.67 1.87 1 3 1s2.17-.33 3-1"/></svg>
+        </div>
+        <h3>AI Enablement</h3>
+        <p>Practical AI in the funnel: drafting variants, scoring leads, and routing replies — set up in your tools, not a slide deck.</p>
+        <span class="tag">Assess → Wire up → Train</span>
+      </div>
+
+      <div class="svc-card reveal reveal-delay-2" style="display:flex; flex-direction:column; justify-content:center; background:var(--void); border-color:var(--void);">
+        <h3 style="color:#fff;">Not sure where to start?</h3>
+        <p style="color:rgba(245,245,250,.65);">Tell us the audience and the goal — we'll tell you which channel earns it fastest.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:18px; width:fit-content;">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="section section-light" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it runs</span>
+      <h2>From data to a live campaign, in four steps.</h2>
+    </div>
+    <div class="process">
+      <div class="proc-step reveal">
+        <div class="proc-num">01</div>
+        <h4>Discover</h4>
+        <p>We look at your data, your audience, and what's already worked — before proposing a single channel.</p>
+      </div>
+      <div class="proc-step reveal reveal-delay-1">
+        <div class="proc-num">02</div>
+        <h4>Strategize</h4>
+        <p>A channel plan, a message, and a number to hit — agreed before anything goes out the door.</p>
+      </div>
+      <div class="proc-step reveal reveal-delay-2">
+        <div class="proc-num">03</div>
+        <h4>Execute</h4>
+        <p>Campaigns go live across email, phone, or DM, built and sent by the team that planned them.</p>
+      </div>
+      <div class="proc-step reveal reveal-delay-3">
+        <div class="proc-num">04</div>
+        <h4>Optimize</h4>
+        <p>We report against the number we agreed on, and adjust the plan before you have to ask.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="section section-dark" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Zielit</span>
+      <h2>One team accountable for the whole funnel.</h2>
+      <p>Most agencies hand you off between specialists. We keep your data, your audience, and your channels under one plan.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-num">01</span>
+        <div><h4>One audience, every channel</h4><p>Your list is built once and used consistently across email, phone, and DM — no duplicated or conflicting outreach.</p></div>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <span class="why-num">02</span>
+        <div><h4>Privacy checked, not assumed</h4><p>Every campaign is run against a privacy assessment first, so growth doesn't outrun what you're allowed to do.</p></div>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <span class="why-num">03</span>
+        <div><h4>AI where it earns its place</h4><p>We use AI to draft, score, and route — never to replace the judgment calls that need a person.</p></div>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <span class="why-num">04</span>
+        <div><h4>Reporting you can act on</h4><p>You get the number you asked for and what we're changing next — not a dashboard you have to interpret.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUOTES ================= -->
+<section class="section section-tint">
+  <div class="container">
+    <div class="quote-strip">
+      <div class="quote-card reveal">
+        <p>"You can't sell anything if you can't tell anything."</p>
+        <span>— Beth Comstock</span>
+      </div>
+      <div class="quote-card reveal reveal-delay-1">
+        <p>"Speak to your audience in the language of what's in their heart."</p>
+        <span>— Jonathan Lister</span>
+      </div>
+      <div class="quote-card reveal reveal-delay-2">
+        <p>"It's not the best content that wins. It's the best promoted content that wins."</p>
+        <span>— Andy Crestodina</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="section section-light" style="padding-top:0;">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h3>Ready to put every channel to work under one plan?</h3>
+      <a href="#contact" class="btn btn-primary">Start a conversation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAREERS ================= -->
+<section class="section section-light" id="careers">
+  <div class="container careers">
+    <div class="reveal">
+      <span class="eyebrow">Careers</span>
+      <h2 style="margin-top:16px; font-size:clamp(26px,3vw,36px);">Build campaigns people respond to. With us.</h2>
+      <p style="margin-top:16px; font-size:16px; line-height:1.7; color:var(--ink-soft);">We're a small, fast-moving team — every hire owns a real channel and a real number, not a slice of a process.</p>
+      <ul class="careers-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Direct ownership of campaigns, not tickets</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Work across email, phone, DM, and AI tooling</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> A team that reports on outcomes, not hours</li>
+      </ul>
+      <a href="mailto:info@zielit.com?subject=Career%20Inquiry" class="btn btn-outline" style="margin-top:28px;">Send us your resume</a>
+    </div>
+    <div class="reveal reveal-delay-2" style="background:var(--void); border-radius:var(--radius); padding:44px; color:#fff;">
+      <span class="eyebrow">Open to</span>
+      <h4 style="margin-top:14px; font-size:20px;">Marketing operators, campaign writers, data & privacy analysts, and AI-tooling engineers.</h4>
+      <p style="margin-top:16px; color:rgba(245,245,250,.65); font-size:14.5px; line-height:1.6;">Don't see your exact role listed? Reach out anyway — email <a href="mailto:info@zielit.com" style="color:var(--ember);">info@zielit.com</a> with what you're good at.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section-tint" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Tell us the goal. We'll tell you the plan.</h2>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <div class="row">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><h4>Email</h4><a href="mailto:info@zielit.com">info@zielit.com</a></div>
+        </div>
+        <div class="row">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4>Studio</h4><p>21 Satnam Estate, Nr Nagarvel Hanuman Temple,<br>Amraiwadi, Ahmedabad – 380026</p></div>
+        </div>
+        <div class="row">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><h4>Response time</h4><p>We reply within one business day.</p></div>
+        </div>
+        <div>
+          <h4 style="margin-bottom:10px;">Follow along</h4>
+          <div class="social-row">
+            <a href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.3l8.2-9.3L1 2h7.2l5 6.6L18.9 2zm-1.2 18h1.7L7.4 4H5.6l12.1 16z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.7c0-1.6-.03-3.65-2.22-3.65-2.23 0-2.57 1.74-2.57 3.54V23h-4V8.5z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1.02-.94-1.6-2.26-1.6-3.7h-3.15v13.6a2.72 2.72 0 1 1-2.72-2.72c.3 0 .59.05.86.13V9.9a5.87 5.87 0 0 0-.86-.06 5.9 5.9 0 1 0 5.9 5.9V8.3a8.8 8.8 0 0 0 5.14 1.65V6.8a5.4 5.4 0 0 1-3.57-.98z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal reveal-delay-2" id="contactForm">
+        <div class="form-row">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your full name" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@company.com" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="company">Company</label><input id="company" name="company" type="text" placeholder="Company name"></div>
+          <div class="field">
+            <label for="channel">Channel you're interested in</label>
+            <select id="channel" name="channel">
+              <option>Email Marketing</option>
+              <option>Phone Marketing</option>
+              <option>DM Marketing</option>
+              <option>Privacy Assessment</option>
+              <option>AI Enablement</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full"><label for="message">What are you trying to achieve?</label><textarea id="message" name="message" placeholder="Tell us about your audience and your goal"></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">This opens your email client addressed to info@zielit.com.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Zielit" style="height:28px; margin-bottom:16px; filter: brightness(0) invert(1);">
+        <p>A data-driven marketing team running email, phone, and DM campaigns — checked for privacy, enabled by AI.</p>
+      </div>
+      <div>
+        <h5>What we do</h5>
+        <ul>
+          <li><a href="#services">Email Marketing</a></li>
+          <li><a href="#services">Phone Marketing</a></li>
+          <li><a href="#services">DM Marketing</a></li>
+          <li><a href="#services">Privacy Assessment</a></li>
+          <li><a href="#services">AI Enablement</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#top">About us</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:info@zielit.com">info@zielit.com</a></li>
+          <li><a href="#contact">Ahmedabad, India</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Zielit. All rights reserved.</span>
+      <span>One marketing solution.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

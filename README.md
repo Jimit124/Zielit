@@ -1,0 +1,33 @@
+# Zielit — Marketing Website
+
+A static, single-page marketing site for Zielit (email, phone, DM marketing, privacy assessment, AI enablement). No build step — plain HTML/CSS/JS, ready for GitHub Pages.
+
+## Files
+- `index.html` — all page content and sections
+- `styles.css` — design system (colors, type, layout, animation)
+- `script.js` — nav behavior, scroll reveal, contact form
+- `assets/logo.png` — your logo
+
+## Deploy on GitHub Pages
+1. Push these files to the root of your repo (`Jimit124/Zielit`), on the `main` branch.
+2. In the repo: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`.
+3. Save. Your site will be live at `https://jimit124.github.io/Zielit/` within a couple of minutes.
+
+## Using your zielit.com domain
+1. Add a file named `CNAME` (no extension) to the repo root containing exactly:
+   ```
+   zielit.com
+   ```
+2. At your domain registrar, point DNS at GitHub Pages:
+   - `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `CNAME` record for `www` → `jimit124.github.io`
+3. Back in **Settings → Pages**, enter `zielit.com` as the custom domain and enable **Enforce HTTPS** once it's verified.
+
+## Editing content
+- Company email, address, and service copy live directly in `index.html` — search for the section by its `id` (`#services`, `#contact`, `#careers`, etc.).
+- Colors and fonts are all CSS variables at the top of `styles.css` under `:root`.
+- The contact form currently opens the visitor's email client (`mailto:`) with their details pre-filled, since there's no backend. If you want real form submissions, connect it to a service like Formspree or a small serverless function and swap the `submit` handler in `script.js`.
+
+## Notes
+- All graphics (the hero network animation, icons) are hand-built SVG/CSS — no stock photography was used, so there's nothing to license or swap out later. Real product/team photos can be dropped into `assets/` and referenced from `index.html` whenever you're ready.
+- Social links in the footer are placeholders (`href="#"`) — add your real profile URLs when ready.
