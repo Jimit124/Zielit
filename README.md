@@ -6,7 +6,15 @@ A static, single-page marketing site for Zielit (email, phone, DM marketing, pri
 - `index.html` — all page content and sections
 - `styles.css` — design system (colors, type, layout, animation)
 - `script.js` — nav behavior, scroll reveal, contact form
-- `assets/logo.png` — your logo
+- `assets/logo.png` — original raster logo (used as the apple-touch-icon)
+- `assets/logo-mark.svg` — icon-only mark (mosaic + crosshair), used as the favicon
+- `assets/logo-full-light.svg` — full logo lockup, white wordmark for dark backgrounds (nav, footer)
+- `assets/logo-full-dark.svg` — full logo lockup, ink wordmark for light backgrounds (e.g. email signatures, printed use)
+
+## Design system
+- **Type:** Libre Franklin (display/headings) + Source Sans 3 (body) + IBM Plex Mono (labels, tags, eyebrows)
+- **Color:** exact brand hexes lifted from the logo — coral `#EF4D3B`, indigo `#4D479A` — plus a void/ink pairing for dark sections. All defined as CSS variables at the top of `styles.css`.
+- **Sections:** Hero → Capabilities (6, incl. AI Governance) → Process → AI Governance detail → Industries → Why Zielit → Perspectives → Careers → Contact.
 
 ## Deploy on GitHub Pages
 1. Push these files to the root of your repo (`Jimit124/Zielit`), on the `main` branch.

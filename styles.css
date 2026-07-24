@@ -12,10 +12,10 @@
 :root{
   --void: #14111F;
   --void-soft: #1D1A2B;
-  --ember: #FF5A3C;
-  --ember-dim: #E14526;
-  --cobalt: #4A3AA8;
-  --cobalt-soft: #6C5CE7;
+  --ember: #EF4D3B;
+  --ember-dim: #D53A28;
+  --cobalt: #4D479A;
+  --cobalt-soft: #7A72C4;
   --chalk: #F5F5FA;
   --paper: #FCFBFE;
   --ink: #1B1830;
@@ -23,8 +23,8 @@
   --line: #E4E1EE;
   --signal: #2FD68C;
 
-  --display: "Space Grotesk", "Arial Narrow", sans-serif;
-  --body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --display: "Libre Franklin", "Arial Narrow", sans-serif;
+  --body: "Source Sans 3", -apple-system, BlinkMacSystemFont, sans-serif;
   --mono: "IBM Plex Mono", "Courier New", monospace;
 
   --container: 1180px;
@@ -51,9 +51,9 @@ body{
 h1,h2,h3,h4{
   font-family: var(--display);
   margin: 0;
-  letter-spacing: -0.02em;
-  line-height: 1.05;
-  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.06;
+  font-weight: 700;
 }
 
 p{ margin: 0; }
@@ -333,6 +333,59 @@ section{ position: relative; }
 .why-card h4{ font-size: 17px; margin-bottom: 8px; color: #fff; }
 .why-card p{ font-size: 14.5px; color: rgba(245,245,250,.62); line-height: 1.6; }
 
+/* ---------- Brand story ---------- */
+.brand-story{
+  display:flex; gap:20px; align-items:flex-start;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px 28px; margin-top: 40px; background: var(--chalk);
+}
+.brand-story .mark{ width:40px; flex-shrink:0; margin-top:4px; }
+.brand-story p{ font-size: 14.5px; line-height: 1.65; color: var(--ink-soft); }
+.brand-story strong{ color: var(--ink); }
+
+/* ---------- Industries ---------- */
+.industries-grid{ display:grid; grid-template-columns: repeat(5,1fr); gap: 16px; }
+.ind-card{
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px 18px; text-align:center; background:#fff;
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
+}
+.ind-card:hover{ transform: translateY(-5px); box-shadow: 0 20px 34px -20px rgba(27,24,48,.22); border-color: transparent; }
+.ind-icon{ width:44px; height:44px; margin: 0 auto 16px; border-radius:50%; background: var(--chalk); display:flex; align-items:center; justify-content:center; color: var(--cobalt); }
+.ind-card h4{ font-size: 15px; margin-bottom: 6px; }
+.ind-card p{ font-size: 12.5px; color: var(--ink-soft); line-height:1.5; }
+
+/* ---------- Governance ---------- */
+.gov-wrap{ display:grid; grid-template-columns: 0.9fr 1.1fr; gap: 60px; align-items:start; }
+.gov-panel{ background: var(--void); border-radius: var(--radius); padding: 34px; }
+.gov-pillars{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.gov-pillar{
+  border: 1px solid rgba(245,245,250,.14); border-radius: var(--radius);
+  padding: 24px; background: rgba(245,245,250,.03);
+}
+.gov-pillar .gicon{ width:36px; height:36px; border-radius:9px; background: rgba(239,77,59,.14); color: var(--ember); display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+.gov-pillar h4{ font-size:15.5px; color:#fff; margin-bottom:8px; }
+.gov-pillar p{ font-size:13.5px; color: rgba(245,245,250,.6); line-height:1.6; }
+.gov-badge{
+  display:inline-flex; align-items:center; gap:8px; font-family: var(--mono); font-size:11.5px;
+  color: var(--signal); border:1px solid rgba(47,214,140,.35); background: rgba(47,214,140,.08);
+  padding: 7px 13px; border-radius: 999px; margin-top: 22px;
+}
+.gov-badge svg{ width:13px; height:13px; }
+
+/* ---------- Perspectives ---------- */
+.persp-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.persp-card{
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; background:#fff;
+  display:flex; flex-direction:column; height:100%;
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.persp-card:hover{ transform: translateY(-5px); box-shadow: 0 20px 36px -20px rgba(27,24,48,.22); }
+.persp-tag{ font-family: var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color: var(--cobalt); margin-bottom:14px; }
+.persp-card h4{ font-size: 17px; line-height:1.35; margin-bottom:12px; }
+.persp-card p{ font-size:13.5px; color: var(--ink-soft); line-height:1.6; flex-grow:1; }
+.persp-link{ margin-top:18px; font-size:13.5px; font-weight:600; color: var(--ember); display:inline-flex; align-items:center; gap:6px; }
+
 /* ---------- Quotes strip ---------- */
 .quote-strip{ display:grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
 .quote-card{ background:#fff; border:1px solid var(--line); border-radius: var(--radius); padding: 26px; }
@@ -413,6 +466,10 @@ section{ position: relative; }
   .process{ grid-template-columns: repeat(2,1fr); row-gap: 40px; }
   .process::before{ display:none; }
   .footer-top{ grid-template-columns: 1fr 1fr; row-gap: 34px; }
+  .industries-grid{ grid-template-columns: repeat(3,1fr); }
+  .gov-wrap{ grid-template-columns: 1fr; }
+  .gov-pillars{ grid-template-columns: 1fr 1fr; }
+  .persp-grid{ grid-template-columns: 1fr; }
 }
 @media (max-width: 720px){
   .nav-links, .nav-cta .btn-outline-alt{ display:none; }
@@ -426,6 +483,8 @@ section{ position: relative; }
   .cta-band{ flex-direction: column; text-align:center; padding: 44px 26px; }
   .footer-top{ grid-template-columns: 1fr; }
   .process{ grid-template-columns: 1fr; }
+  .industries-grid{ grid-template-columns: repeat(2,1fr); }
+  .gov-pillars{ grid-template-columns: 1fr; }
 }
 
 /* ---------- Mobile menu overlay ---------- */
