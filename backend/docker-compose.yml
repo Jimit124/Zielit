@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: zielit
+      POSTGRES_PASSWORD: zielit
+      POSTGRES_DB: zielit
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    ports:
+      - "5432:5432"
+
+  api:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://zielit:zielit@db:5432/zielit
+    ports:
+      - "8000:8000"
+
+  watcher:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://zielit:zielit@db:5432/zielit
+      SFTP_ROOT: /data/sftp
+      POLL_SECONDS: "15"
+    volumes:
+      - sftpdata:/data/sftp
+    command: ["python", "sftp_watcher/watch.py"]
+
+  sftp:
+    image: atmoz/sftp:latest
+    restart: unless-stopped
+    # Demo account below: demo / demo-pass123, files land in /home/demo/incoming
+    # See README "Adding a customer" for how to add a real account per signup.
+    command: demo:demo-pass123:1001:100:incoming
+    volumes:
+      - sftpdata:/home
+    ports:
+      - "2222:22"
+
+volumes:
+  pgdata:
+  sftpdata:

@@ -1,0 +1,4 @@
+email,first_name,last_name,company,industry,job_title,country,engagement_score,last_purchase_date,consent_status,consent_date,tags
+jane.doe@acme.com,Jane,Doe,Acme Corp,SaaS,VP Marketing,US,72,2026-03-14,opted_in,2025-11-02,newsletter;webinar-attendee
+john.smith@example.com,John,Smith,Example Retail,Retail,Owner,CA,35,,opted_in,2026-01-05,newsletter
+maria.g@fintechco.com,Maria,Garcia,FintechCo,Financial Services,Head of Growth,US,88,2026-06-20,opted_in,2025-09-18,demo-request;high-intent
