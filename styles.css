@@ -563,3 +563,46 @@ section{ position: relative; }
 @media (hover:none){
   .cursor-spotlight{ display:none; }
 }
+
+/* ==========================================================================
+   MULTI-PAGE EXPANSION — stats band + nav active state
+   ========================================================================== */
+
+/* Nav active-page indicator */
+.nav-links a.active{ color: var(--ember); }
+.nav-links a.active::after{ right: 0; }
+.mobile-menu a.active{ color: var(--ember); }
+
+/* Sub-pages have no dark hero behind the nav, so it needs its own
+   permanent dark backing rather than relying on the hero showing through. */
+.page-sub .nav{
+  background: rgba(20,17,31,.94);
+  backdrop-filter: blur(14px);
+  padding: 14px 0;
+  box-shadow: 0 1px 0 rgba(255,255,255,.06);
+}
+.page-sub .nav.scrolled{ padding: 12px 0; }
+
+/* Stats band (Home + reused wherever useful) */
+.stats-section{ padding-top: 70px; padding-bottom: 70px; }
+.stats-grid{
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+  background: var(--line); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; margin-top: 44px;
+}
+.stat-tile{
+  background: var(--paper); padding: 34px 26px; text-align: left;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.stat-tile strong{
+  font-family: var(--display); font-size: clamp(30px, 3.4vw, 42px); font-weight: 800;
+  color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums;
+}
+.stat-tile span{ font-size: 13.5px; color: var(--ink-soft); line-height: 1.5; max-width: 26ch; }
+
+@media (max-width: 860px){
+  .stats-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px){
+  .stats-grid{ grid-template-columns: 1fr; }
+}

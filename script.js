@@ -40,57 +40,61 @@ revealEls.forEach(el => {
 });
 
 // Contact form -> real submission via FormSubmit.co, with mailto fallback
+// Guarded: the form only exists on contact.html, but script.js loads on
+// every page now that the site is multi-page.
 const form = document.getElementById('contactForm');
-const submitBtn = document.getElementById('submitBtn');
-const formNote = document.getElementById('formNote');
-const formSuccess = document.getElementById('formSuccess');
-const formError = document.getElementById('formError');
+if (form) {
+  const submitBtn = document.getElementById('submitBtn');
+  const formNote = document.getElementById('formNote');
+  const formSuccess = document.getElementById('formSuccess');
+  const formError = document.getElementById('formError');
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  formError.style.display = 'none';
-  submitBtn.disabled = true;
-  submitBtn.textContent = 'Sending…';
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    formError.style.display = 'none';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
 
-  const data = new FormData(form);
+    const data = new FormData(form);
 
-  try {
-    const res = await fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
 
-    if (!res.ok) throw new Error('Bad response');
+      if (!res.ok) throw new Error('Bad response');
 
-    form.reset();
-    formNote.style.display = 'none';
-    formSuccess.style.display = 'block';
-    submitBtn.textContent = 'Send message';
-    submitBtn.disabled = false;
+      form.reset();
+      formNote.style.display = 'none';
+      formSuccess.style.display = 'block';
+      submitBtn.textContent = 'Send message';
+      submitBtn.disabled = false;
 
-    setTimeout(() => {
-      formSuccess.style.display = 'none';
-      formNote.style.display = 'block';
-    }, 7000);
+      setTimeout(() => {
+        formSuccess.style.display = 'none';
+        formNote.style.display = 'block';
+      }, 7000);
 
-  } catch (err) {
-    // Network/service failed — fall back to opening the visitor's email client
-    const name = data.get('name') || '';
-    const email = data.get('email') || '';
-    const company = data.get('company') || '';
-    const channel = data.get('channel') || '';
-    const message = data.get('message') || '';
-    const subject = encodeURIComponent(`Marketing inquiry — ${channel}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nChannel: ${channel}\n\n${message}`
-    );
-    window.location.href = `mailto:info@zielit.com?subject=${subject}&body=${body}`;
-    submitBtn.textContent = 'Send message';
-    submitBtn.disabled = false;
-    formError.style.display = 'block';
-  }
-});
+    } catch (err) {
+      // Network/service failed — fall back to opening the visitor's email client
+      const name = data.get('name') || '';
+      const email = data.get('email') || '';
+      const company = data.get('company') || '';
+      const channel = data.get('channel') || '';
+      const message = data.get('message') || '';
+      const subject = encodeURIComponent(`Marketing inquiry — ${channel}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nChannel: ${channel}\n\n${message}`
+      );
+      window.location.href = `mailto:info@zielit.com?subject=${subject}&body=${body}`;
+      submitBtn.textContent = 'Send message';
+      submitBtn.disabled = false;
+      formError.style.display = 'block';
+    }
+  });
+}
 
 // ==========================================================================
 // MODERNIZATION PASS — layered on top of the existing behavior above.
@@ -167,31 +171,39 @@ const isTouch = window.matchMedia('(hover: none)').matches;
   });
 })();
 
-// Count-up animation for the "who we are" stat trio (3 / 1 / 0)
+// Count-up animation for stat numbers: the "who we are" trio (3 / 1 / 0)
+// and the stats-band tiles (which carry data-count + optional data-suffix).
 (function countUpStats() {
-  const stats = document.querySelectorAll('.about-stats strong');
-  if (!stats.length) return;
-  const animate = (el) => {
-    const target = parseInt(el.textContent, 10);
+  const legacyStats = document.querySelectorAll('.about-stats strong');
+  const bandStats = document.querySelectorAll('.stat-tile strong[data-count]');
+  if (!legacyStats.length && !bandStats.length) return;
+
+  const animate = (el, target, suffix) => {
     if (Number.isNaN(target) || prefersReducedMotion) return;
     const duration = 900;
     const start = performance.now();
     const tick = (now) => {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(eased * target);
+      el.textContent = Math.round(eased * target) + suffix;
       if (progress < 1) requestAnimationFrame(tick);
-      else el.textContent = target;
+      else el.textContent = target + suffix;
     };
     requestAnimationFrame(tick);
   };
+
   const statIo = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        animate(entry.target);
-        statIo.unobserve(entry.target);
+        const el = entry.target;
+        const target = parseInt(el.dataset.count ?? el.textContent, 10);
+        const suffix = el.dataset.suffix ?? '';
+        animate(el, target, suffix);
+        statIo.unobserve(el);
       }
     });
   }, { threshold: 0.6 });
-  stats.forEach((el) => statIo.observe(el));
+
+  legacyStats.forEach((el) => statIo.observe(el));
+  bandStats.forEach((el) => statIo.observe(el));
 })();
