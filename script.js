@@ -171,12 +171,13 @@ const isTouch = window.matchMedia('(hover: none)').matches;
   });
 })();
 
-// Count-up animation for stat numbers: the "who we are" trio (3 / 1 / 0)
-// and the stats-band tiles (which carry data-count + optional data-suffix).
+// Count-up animation for stat numbers: the "who we are" trio (3 / 1 / 0),
+// the home page stats band, and the hero stat strip — anything carrying
+// data-count (with an optional data-suffix) or sitting in .about-stats.
 (function countUpStats() {
   const legacyStats = document.querySelectorAll('.about-stats strong');
-  const bandStats = document.querySelectorAll('.stat-tile strong[data-count]');
-  if (!legacyStats.length && !bandStats.length) return;
+  const dataStats = document.querySelectorAll('strong[data-count]');
+  if (!legacyStats.length && !dataStats.length) return;
 
   const animate = (el, target, suffix) => {
     if (Number.isNaN(target) || prefersReducedMotion) return;
@@ -205,5 +206,5 @@ const isTouch = window.matchMedia('(hover: none)').matches;
   }, { threshold: 0.6 });
 
   legacyStats.forEach((el) => statIo.observe(el));
-  bandStats.forEach((el) => statIo.observe(el));
+  dataStats.forEach((el) => statIo.observe(el));
 })();

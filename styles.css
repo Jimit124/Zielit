@@ -601,3 +601,18 @@ section{ position: relative; }
 @media (max-width: 560px){
   .stats-grid{ grid-template-columns: 1fr; }
 }
+
+/* Hero stat strip — quick, above-the-fold numbers for first-time visitors */
+.hero-stats{
+  display: flex; gap: 28px; margin-top: 32px; padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.hero-stat{ display: flex; flex-direction: column; gap: 4px; }
+.hero-stat strong{
+  font-family: var(--display); font-size: 26px; font-weight: 800; color: #fff;
+  line-height: 1; font-variant-numeric: tabular-nums;
+}
+.hero-stat span{ font-size: 12px; color: rgba(245,245,250,.6); }
+@media (max-width: 720px){
+  .hero-stats{ gap: 20px; flex-wrap: wrap; }
+}
