@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Governance Checklist for Marketing Teams (2026) — Zielit</title>
+<meta name="description" content="A practical AI governance checklist for marketing: inventory, data limits, human review, disclosure, logging and regulatory mapping — plus where the EU AI Act timeline stands in 2026.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="canonical" href="https://zielit.com/ai-governance-checklist-marketing.html">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI Governance Checklist for Marketing Teams (2026) — Zielit">
+<meta property="og:description" content="A practical AI governance checklist for marketing: inventory, data limits, human review, disclosure, logging and regulatory mapping — plus where the EU AI Act timeline stands in 2026.">
+<meta property="og:url" content="https://zielit.com/ai-governance-checklist-marketing.html">
+<meta property="og:image" content="https://zielit.com/assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Governance Checklist for Marketing Teams (2026) — Zielit">
+<meta name="twitter:description" content="A practical AI governance checklist for marketing: inventory, data limits, human review, disclosure, logging and regulatory mapping — plus where the EU AI Act timeline stands in 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.page-hero{padding:150px 0 56px;background:var(--chalk);}
+.page-hero .section-head{max-width:780px;margin-bottom:0;}
+.page-hero h1{font-size:clamp(32px,4.2vw,52px);margin-top:16px;line-height:1.08;}
+.page-hero .lead{font-size:20px;color:var(--ink-soft);margin-top:18px;line-height:1.55;}
+.crumbs{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--ink-soft);margin-bottom:22px;}
+.crumbs a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line);}
+.prose-wrap{padding:64px 0 32px;background:var(--paper);}
+.prose{max-width:760px;color:var(--ink);font-size:18px;line-height:1.7;}
+.prose h2{font-size:clamp(24px,2.6vw,32px);margin:48px 0 14px;line-height:1.2;}
+.prose h3{font-size:20px;margin:30px 0 10px;}
+.prose p{margin:0 0 18px;}
+.prose ul,.prose ol{margin:0 0 20px;padding-left:22px;}
+.prose li{margin-bottom:8px;}
+.prose a{color:var(--cobalt);}
+.prose table{width:100%;border-collapse:collapse;margin:8px 0 24px;font-size:16px;}
+.prose th,.prose td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;}
+.prose th{background:var(--chalk);font-weight:700;}
+.answer-box{border-left:4px solid var(--ember);background:var(--chalk);padding:18px 22px;border-radius:0 var(--radius) var(--radius) 0;margin:0 0 28px;}
+.answer-box strong{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);margin-bottom:6px;}
+.meta-line{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);margin-top:20px;letter-spacing:.04em;}
+.note{font-size:15px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:16px;margin-top:36px;}
+.faq{padding:24px 0 72px;background:var(--paper);}
+.faq .inner{max-width:760px;}
+.faq h2{font-size:clamp(24px,2.6vw,32px);margin:0 0 20px;}
+.faq details{border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff;}
+.faq summary{cursor:pointer;font-weight:700;font-size:18px;color:var(--ink);}
+.faq details p{margin:12px 0 0;font-size:17px;line-height:1.65;color:var(--ink-soft);}
+.related{padding:0 0 72px;background:var(--paper);}
+.related .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1000px;}
+.related a.card{display:block;border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--ink);background:#fff;}
+.related a.card span{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);}
+.related a.card h3{font-size:18px;margin:8px 0 0;line-height:1.3;}
+.cta-simple{padding:64px 0;background:var(--void);color:#fff;text-align:center;}
+.cta-simple h2{color:#fff;font-size:clamp(26px,3vw,38px);margin:0 0 22px;}
+@media (max-width:640px){.page-hero{padding:120px 0 40px;}.prose{font-size:17px;}.prose table{font-size:14px;display:block;overflow-x:auto;}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://zielit.com/#organization",
+   "name": "Zielit",
+   "url": "https://zielit.com/",
+   "logo": "https://zielit.com/assets/logo.png",
+   "email": "info@zielit.com"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://zielit.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Insights",
+     "item": "https://zielit.com/insights.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AI Governance Checklist for Marketing Teams (2026)",
+     "item": "https://zielit.com/ai-governance-checklist-marketing.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What should an AI governance checklist for marketing include?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An inventory of AI uses, a named owner for each, data limits, human-review rules, disclosure rules, logging, a mapping to applicable regulations, and a review schedule."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When do EU AI Act high-risk obligations apply?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "After the Digital Omnibus on AI published in July 2026, obligations for stand-alone (Annex III) high-risk systems apply from December 2, 2027, and for high-risk AI in regulated products (Annex I) from August 2, 2028. Prohibited practices and AI literacy rules have applied since February 2, 2025."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is marketing AI high-risk under the EU AI Act?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually not, but each use should be assessed, and transparency duties can still apply to chatbots and AI-generated content."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Article",
+   "@id": "https://zielit.com/ai-governance-checklist-marketing.html#article",
+   "headline": "An AI governance checklist for marketing teams (and the questions your board will ask)",
+   "description": "A practical AI governance checklist for marketing: inventory, data limits, human review, disclosure, logging and regulatory mapping — plus where the EU AI Act timeline stands in 2026.",
+   "datePublished": "2026-11-01",
+   "dateModified": "2026-11-01",
+   "author": {
+    "@id": "https://zielit.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://zielit.com/#organization"
+   },
+   "mainEntityOfPage": "https://zielit.com/ai-governance-checklist-marketing.html",
+   "image": "https://zielit.com/assets/logo.png"
+  }
+ ]
+}
+</script>
+</head>
+<body class="page-sub">
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-full-light.svg" alt="Zielit — one marketing solution" style="height:34px; width:auto;">
+    </a>
+    <nav class="nav-links">
+      <a href="capabilities.html">Capabilities</a>
+      <a href="industries.html">Industries</a>
+      <a href="insights.html" class="active">Insights</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta desktop-only">
+      <a href="mailto:info@zielit.com" class="btn btn-ghost">info@zielit.com</a>
+      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu"><a href="capabilities.html">Capabilities</a><a href="industries.html">Industries</a><a href="insights.html" class="active">Insights</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<main>
+<section class="page-hero"><div class="container"><div class="section-head">
+<div class="crumbs"><a href="index.html">Home</a> / <a href="insights.html">Insights</a></div>
+<span class="eyebrow">Insight · AI Governance</span>
+<h1>An AI governance checklist for marketing teams (and the questions your board will ask)</h1>
+<p class="lead">Who reviewed it, what data it touched, and how you'd explain it — worth answering before you're asked.</p>
+<div class="meta-line">Last reviewed November 1, 2026 · Zielit</div>
+</div></div></section>
+<section class="prose-wrap"><div class="container"><div class="prose">
+
+<div class="answer-box"><strong>Short answer</strong>A workable AI governance program for marketing has eight parts: an inventory of every AI use case, a named owner for each, limits on the data each may use, required human review before anything reaches a customer, disclosure rules, logging, a mapping to the regulations each use touches, and a review schedule. The checklist below turns that into questions you can answer this quarter.</div>
+
+<h2>The checklist</h2>
+<ol>
+<li><strong>Inventory.</strong> List every AI tool and feature in the funnel — copy drafting, image generation, personalization, lead scoring, reply routing, chatbots — including AI features switched on inside tools you already pay for.</li>
+<li><strong>Owner.</strong> Name one accountable person per use case.</li>
+<li><strong>Data limits.</strong> Write down what customer data each use may see, and confirm it matches your privacy notice and consent records.</li>
+<li><strong>Human review.</strong> Decide which outputs need a person to review them before they reach a customer. (Ours: anything AI drafts or scores.)</li>
+<li><strong>Disclosure.</strong> Decide when AI involvement is disclosed to customers — for example, when they're talking to a chatbot.</li>
+<li><strong>Logging.</strong> Keep a record of AI-assisted steps so you can explain an output later.</li>
+<li><strong>Regulatory mapping.</strong> Map each use to the rules it touches: state privacy laws (such as the CCPA and the Texas Data Privacy and Security Act), GDPR where EU residents are involved, and the EU AI Act where applicable.</li>
+<li><strong>Review cadence.</strong> Re-check the inventory on a schedule and whenever a tool, use or rule changes.</li>
+</ol>
+
+<h2>The questions boards and clients ask</h2>
+<ul>
+<li>Where are we using AI with customer data today?</li>
+<li>Who reviewed the output before it went out?</li>
+<li>Could we explain why a given lead was scored or a message was chosen?</li>
+<li>Is this use covered by what we told customers?</li>
+<li>What would we show a regulator or an enterprise client's security review?</li>
+</ul>
+
+<h2>Where the EU AI Act stands (November 2026)</h2>
+<p>The EU AI Act entered into force on August 1, 2024. Its prohibited-practice rules and AI literacy obligations applied from February 2, 2025, and general-purpose AI model obligations from August 2, 2025. The Digital Omnibus on AI, published in July 2026, pushed back the high-risk system obligations: stand-alone (Annex III) high-risk systems now apply from December 2, 2027, and high-risk AI embedded in regulated products (Annex I) from August 2, 2028.</p>
+<p>Most marketing uses aren't high-risk under the Act, but transparency duties around chatbots and AI-generated content, and the obligations that were never delayed, still matter for teams that reach EU audiences.</p>
+
+<h2>Start small</h2>
+<p>You don't need a framework document to begin. A one-page inventory with owners, data limits and review rules covers most of the risk. Zielit's <a href="ai-governance.html">AI governance</a> work starts there, and every AI touchpoint we set up through <a href="ai-enablement.html">AI enablement</a> ships with that record.</p>
+<p class="note">This article is general information about marketing operations, not legal advice. Laws and agency rules change; confirm how they apply to your business with qualified counsel.</p>
+</div></div></section>
+<section class="faq"><div class="container"><div class="inner">
+<h2>Frequently asked questions</h2>
+<details><summary>What should an AI governance checklist for marketing include?</summary><p>An inventory of AI uses, a named owner for each, data limits, human-review rules, disclosure rules, logging, a mapping to applicable regulations, and a review schedule.</p></details>
+<details><summary>When do EU AI Act high-risk obligations apply?</summary><p>After the Digital Omnibus on AI published in July 2026, obligations for stand-alone (Annex III) high-risk systems apply from December 2, 2027, and for high-risk AI in regulated products (Annex I) from August 2, 2028. Prohibited practices and AI literacy rules have applied since February 2, 2025.</p></details>
+<details><summary>Is marketing AI high-risk under the EU AI Act?</summary><p>Usually not, but each use should be assessed, and transparency duties can still apply to chatbots and AI-generated content.</p></details>
+</div></div></section>
+<section class="related"><div class="container">
+<div class="grid">
+<a class="card" href="ai-governance.html"><span>Capability</span><h3>AI Governance</h3></a>
+<a class="card" href="ai-enablement.html"><span>Capability</span><h3>AI Enablement</h3></a>
+<a class="card" href="privacy-governance.html"><span>Capability</span><h3>Privacy Governance</h3></a>
+</div></div></section>
+<section class="cta-simple"><div class="container">
+<h2>Want this checked for your program?</h2>
+<a href="contact.html" class="btn btn-primary">Start a conversation</a>
+</div></section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<div class="footer-brand">
+<img src="assets/logo-full-light.svg" alt="Zielit" style="height:26px; margin-bottom:16px;">
+<p>A data-driven marketing practice running email, phone, and DM campaigns — checked for privacy, governed where AI is involved.</p>
+</div>
+<div>
+<h5>Capabilities</h5>
+<ul>
+<li><a href="email-marketing.html">Email Marketing</a></li>
+<li><a href="phone-marketing.html">Phone Marketing</a></li>
+<li><a href="dm-marketing.html">DM Marketing</a></li>
+<li><a href="privacy-assessment.html">Privacy Assessment</a></li>
+<li><a href="privacy-governance.html">Privacy Governance</a></li>
+<li><a href="ai-enablement.html">AI Enablement</a></li>
+<li><a href="ai-governance.html">AI Governance</a></li>
+</ul>
+</div>
+<div>
+<h5>Company</h5>
+<ul>
+<li><a href="about.html">About us</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="capabilities.html#process">Process</a></li>
+<li><a href="about.html#careers">Careers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5>Contact</h5>
+<ul>
+<li><a href="mailto:info@zielit.com">info@zielit.com</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© <span id="year">2026</span> Zielit. All rights reserved.</span>
+<span>One marketing solution.</span>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

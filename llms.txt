@@ -1,0 +1,24 @@
+# Zielit
+
+> Zielit is a data-driven marketing practice that plans, runs and measures email, phone (calls and SMS) and direct-message campaigns, with a privacy assessment before every launch and AI enabled and governed where it is used. Every send is checked against consent status. Contact: info@zielit.com.
+
+## Capabilities
+- [Privacy Assessment for Marketing Campaigns](https://zielit.com/privacy-assessment.html): A pre-launch privacy assessment for email, phone, SMS and DM campaigns: what data you collect, where it lives, what consent covers, and which rules apply.
+- [Privacy Governance for Marketing](https://zielit.com/privacy-governance.html): Privacy governance for marketing: the standing rules, owners and records that keep email, phone, SMS and DM programs compliant after launch, not just before it.
+- [AI Governance for Marketing](https://zielit.com/ai-governance.html): AI governance for marketing teams: transparency, human review, data stewardship and compliance mapping for every AI tool in your funnel, mapped to GDPR, CCPA and the EU AI Act.
+- [AI Enablement for Marketing](https://zielit.com/ai-enablement.html): Practical AI in the marketing funnel: drafting variants, scoring leads and routing replies — set up in your own tools, with human review and governance built in.
+- [Email Marketing Campaigns](https://zielit.com/email-marketing.html): Email marketing campaigns built on validated, de-duplicated, consent-checked lists: segmented properly, subject lines tested, every send checked against opt-out status.
+- [Phone Marketing Programs](https://zielit.com/phone-marketing.html): Outbound and inbound phone marketing run by trained callers on tuned scripts, with every call logged back to the record and consent, calling-hour and Do Not Call rules built in.
+- [Direct-Message (DM) Marketing](https://zielit.com/dm-marketing.html): Direct-message outreach on LinkedIn, X, TikTok and beyond, written to sound like a person, with follow-up and every reply logged — run inside each platform's rules.
+
+## Insights
+- [Do you need to register to send marketing texts in Texas? What SB 140 changed](https://zielit.com/texas-sms-marketing-sb140.html): Since September 1, 2025, Texas SB 140 treats marketing text messages as telephone solicitations. What changed, who must register, exemptions, penalties and a compliance checklist.
+- [TCPA vs. CAN-SPAM: which rules apply to marketing calls, texts and email](https://zielit.com/tcpa-vs-can-spam.html): A side-by-side of the TCPA and CAN-SPAM for marketers: consent, opt-outs, calling hours, penalties, and the 2025–2026 changes to TCPA consent and revocation rules.
+- [What the Texas Data Privacy and Security Act means for marketing teams](https://zielit.com/texas-data-privacy-act-marketing.html): How the Texas Data Privacy and Security Act affects marketing: who it covers, targeted advertising opt-outs, sensitive data consent, data protection assessments and penalties.
+- [Why a privacy assessment should come before the campaign brief, not after](https://zielit.com/privacy-assessment-before-campaign.html): Privacy checks bolted on before a send can only stop it. Run before the list is built, a privacy assessment shapes the audience, the channel and the message.
+- [An AI governance checklist for marketing teams (and the questions your board will ask)](https://zielit.com/ai-governance-checklist-marketing.html): A practical AI governance checklist for marketing: inventory, data limits, human review, disclosure, logging and regulatory mapping — plus where the EU AI Act timeline stands in 2026.
+
+## Company
+- [About](https://zielit.com/about.html)
+- [Industries](https://zielit.com/industries.html)
+- [Contact](https://zielit.com/contact.html)

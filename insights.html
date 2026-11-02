@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insights: Marketing Privacy, Consent and AI Governance — Zielit</title>
+<meta name="description" content="Zielit Insights: practical guides to marketing privacy, consent, TCPA and CAN-SPAM, the Texas privacy and telemarketing laws, and AI governance for marketing teams.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="canonical" href="https://zielit.com/insights.html">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Insights: Marketing Privacy, Consent and AI Governance — Zielit">
+<meta property="og:description" content="Zielit Insights: practical guides to marketing privacy, consent, TCPA and CAN-SPAM, the Texas privacy and telemarketing laws, and AI governance for marketing teams.">
+<meta property="og:url" content="https://zielit.com/insights.html">
+<meta property="og:image" content="https://zielit.com/assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Insights: Marketing Privacy, Consent and AI Governance — Zielit">
+<meta name="twitter:description" content="Zielit Insights: practical guides to marketing privacy, consent, TCPA and CAN-SPAM, the Texas privacy and telemarketing laws, and AI governance for marketing teams.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.page-hero{padding:150px 0 56px;background:var(--chalk);}
+.page-hero .section-head{max-width:780px;margin-bottom:0;}
+.page-hero h1{font-size:clamp(32px,4.2vw,52px);margin-top:16px;line-height:1.08;}
+.page-hero .lead{font-size:20px;color:var(--ink-soft);margin-top:18px;line-height:1.55;}
+.crumbs{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--ink-soft);margin-bottom:22px;}
+.crumbs a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line);}
+.prose-wrap{padding:64px 0 32px;background:var(--paper);}
+.prose{max-width:760px;color:var(--ink);font-size:18px;line-height:1.7;}
+.prose h2{font-size:clamp(24px,2.6vw,32px);margin:48px 0 14px;line-height:1.2;}
+.prose h3{font-size:20px;margin:30px 0 10px;}
+.prose p{margin:0 0 18px;}
+.prose ul,.prose ol{margin:0 0 20px;padding-left:22px;}
+.prose li{margin-bottom:8px;}
+.prose a{color:var(--cobalt);}
+.prose table{width:100%;border-collapse:collapse;margin:8px 0 24px;font-size:16px;}
+.prose th,.prose td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;}
+.prose th{background:var(--chalk);font-weight:700;}
+.answer-box{border-left:4px solid var(--ember);background:var(--chalk);padding:18px 22px;border-radius:0 var(--radius) var(--radius) 0;margin:0 0 28px;}
+.answer-box strong{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);margin-bottom:6px;}
+.meta-line{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);margin-top:20px;letter-spacing:.04em;}
+.note{font-size:15px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:16px;margin-top:36px;}
+.faq{padding:24px 0 72px;background:var(--paper);}
+.faq .inner{max-width:760px;}
+.faq h2{font-size:clamp(24px,2.6vw,32px);margin:0 0 20px;}
+.faq details{border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff;}
+.faq summary{cursor:pointer;font-weight:700;font-size:18px;color:var(--ink);}
+.faq details p{margin:12px 0 0;font-size:17px;line-height:1.65;color:var(--ink-soft);}
+.related{padding:0 0 72px;background:var(--paper);}
+.related .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1000px;}
+.related a.card{display:block;border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--ink);background:#fff;}
+.related a.card span{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);}
+.related a.card h3{font-size:18px;margin:8px 0 0;line-height:1.3;}
+.cta-simple{padding:64px 0;background:var(--void);color:#fff;text-align:center;}
+.cta-simple h2{color:#fff;font-size:clamp(26px,3vw,38px);margin:0 0 22px;}
+@media (max-width:640px){.page-hero{padding:120px 0 40px;}.prose{font-size:17px;}.prose table{font-size:14px;display:block;overflow-x:auto;}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://zielit.com/#organization",
+   "name": "Zielit",
+   "url": "https://zielit.com/",
+   "logo": "https://zielit.com/assets/logo.png",
+   "email": "info@zielit.com"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://zielit.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Notes from running the channels, not just studying them",
+     "item": "https://zielit.com/insights.html"
+    }
+   ]
+  },
+  {
+   "@type": "CollectionPage",
+   "@id": "https://zielit.com/insights.html#page",
+   "name": "Zielit Insights",
+   "hasPart": [
+    {
+     "@id": "https://zielit.com/texas-sms-marketing-sb140.html#article"
+    },
+    {
+     "@id": "https://zielit.com/tcpa-vs-can-spam.html#article"
+    },
+    {
+     "@id": "https://zielit.com/texas-data-privacy-act-marketing.html#article"
+    },
+    {
+     "@id": "https://zielit.com/privacy-assessment-before-campaign.html#article"
+    },
+    {
+     "@id": "https://zielit.com/ai-governance-checklist-marketing.html#article"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body class="page-sub">
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-full-light.svg" alt="Zielit — one marketing solution" style="height:34px; width:auto;">
+    </a>
+    <nav class="nav-links">
+      <a href="capabilities.html">Capabilities</a>
+      <a href="industries.html">Industries</a>
+      <a href="insights.html" class="active">Insights</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta desktop-only">
+      <a href="mailto:info@zielit.com" class="btn btn-ghost">info@zielit.com</a>
+      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu"><a href="capabilities.html">Capabilities</a><a href="industries.html">Industries</a><a href="insights.html" class="active">Insights</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<main>
+<section class="page-hero"><div class="container"><div class="section-head">
+<div class="crumbs"><a href="index.html">Home</a></div>
+<span class="eyebrow">Insights</span>
+<h1>Notes from running the channels, not just studying them</h1>
+<p class="lead">Plain-language guides to marketing privacy, consent rules and AI governance.</p>
+
+</div></div></section>
+<section class="prose-wrap"><div class="container"><div class="prose">
+
+<p>Practical notes on running consent-checked marketing across email, phone, SMS and direct message — and on governing the privacy and AI decisions underneath them.</p>
+<h2>Articles</h2>
+<ul>
+<li><a href="texas-sms-marketing-sb140.html"><strong>Do you need to register to send marketing texts in Texas? What SB 140 changed</strong></a><br>Since September 1, 2025, Texas SB 140 treats marketing text messages as telephone solicitations. What changed, who must register, exemptions, penalties and a compliance checklist.</li>
+<li><a href="tcpa-vs-can-spam.html"><strong>TCPA vs. CAN-SPAM: which rules apply to marketing calls, texts and email</strong></a><br>A side-by-side of the TCPA and CAN-SPAM for marketers: consent, opt-outs, calling hours, penalties, and the 2025–2026 changes to TCPA consent and revocation rules.</li>
+<li><a href="texas-data-privacy-act-marketing.html"><strong>What the Texas Data Privacy and Security Act means for marketing teams</strong></a><br>How the Texas Data Privacy and Security Act affects marketing: who it covers, targeted advertising opt-outs, sensitive data consent, data protection assessments and penalties.</li>
+<li><a href="privacy-assessment-before-campaign.html"><strong>Why a privacy assessment should come before the campaign brief, not after</strong></a><br>Privacy checks bolted on before a send can only stop it. Run before the list is built, a privacy assessment shapes the audience, the channel and the message.</li>
+<li><a href="ai-governance-checklist-marketing.html"><strong>An AI governance checklist for marketing teams (and the questions your board will ask)</strong></a><br>A practical AI governance checklist for marketing: inventory, data limits, human review, disclosure, logging and regulatory mapping — plus where the EU AI Act timeline stands in 2026.</li>
+</ul>
+<h2>Capabilities</h2>
+<ul>
+<li><a href="privacy-assessment.html">Privacy Assessment for Marketing Campaigns</a></li>
+<li><a href="privacy-governance.html">Privacy Governance for Marketing</a></li>
+<li><a href="ai-governance.html">AI Governance for Marketing</a></li>
+<li><a href="ai-enablement.html">AI Enablement for Marketing</a></li>
+<li><a href="email-marketing.html">Email Marketing Campaigns</a></li>
+<li><a href="phone-marketing.html">Phone Marketing Programs</a></li>
+<li><a href="dm-marketing.html">Direct-Message (DM) Marketing</a></li>
+</ul>
+
+</div></div></section>
+
+
+<section class="cta-simple"><div class="container">
+<h2>Want this run for your program?</h2>
+<a href="contact.html" class="btn btn-primary">Start a conversation</a>
+</div></section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<div class="footer-brand">
+<img src="assets/logo-full-light.svg" alt="Zielit" style="height:26px; margin-bottom:16px;">
+<p>A data-driven marketing practice running email, phone, and DM campaigns — checked for privacy, governed where AI is involved.</p>
+</div>
+<div>
+<h5>Capabilities</h5>
+<ul>
+<li><a href="email-marketing.html">Email Marketing</a></li>
+<li><a href="phone-marketing.html">Phone Marketing</a></li>
+<li><a href="dm-marketing.html">DM Marketing</a></li>
+<li><a href="privacy-assessment.html">Privacy Assessment</a></li>
+<li><a href="privacy-governance.html">Privacy Governance</a></li>
+<li><a href="ai-enablement.html">AI Enablement</a></li>
+<li><a href="ai-governance.html">AI Governance</a></li>
+</ul>
+</div>
+<div>
+<h5>Company</h5>
+<ul>
+<li><a href="about.html">About us</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="capabilities.html#process">Process</a></li>
+<li><a href="about.html#careers">Careers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5>Contact</h5>
+<ul>
+<li><a href="mailto:info@zielit.com">info@zielit.com</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© <span id="year">2026</span> Zielit. All rights reserved.</span>
+<span>One marketing solution.</span>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Governance for Marketing — Zielit</title>
+<meta name="description" content="AI governance for marketing teams: transparency, human review, data stewardship and compliance mapping for every AI tool in your funnel, mapped to GDPR, CCPA and the EU AI Act.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="canonical" href="https://zielit.com/ai-governance.html">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Governance for Marketing — Zielit">
+<meta property="og:description" content="AI governance for marketing teams: transparency, human review, data stewardship and compliance mapping for every AI tool in your funnel, mapped to GDPR, CCPA and the EU AI Act.">
+<meta property="og:url" content="https://zielit.com/ai-governance.html">
+<meta property="og:image" content="https://zielit.com/assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Governance for Marketing — Zielit">
+<meta name="twitter:description" content="AI governance for marketing teams: transparency, human review, data stewardship and compliance mapping for every AI tool in your funnel, mapped to GDPR, CCPA and the EU AI Act.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.page-hero{padding:150px 0 56px;background:var(--chalk);}
+.page-hero .section-head{max-width:780px;margin-bottom:0;}
+.page-hero h1{font-size:clamp(32px,4.2vw,52px);margin-top:16px;line-height:1.08;}
+.page-hero .lead{font-size:20px;color:var(--ink-soft);margin-top:18px;line-height:1.55;}
+.crumbs{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--ink-soft);margin-bottom:22px;}
+.crumbs a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line);}
+.prose-wrap{padding:64px 0 32px;background:var(--paper);}
+.prose{max-width:760px;color:var(--ink);font-size:18px;line-height:1.7;}
+.prose h2{font-size:clamp(24px,2.6vw,32px);margin:48px 0 14px;line-height:1.2;}
+.prose h3{font-size:20px;margin:30px 0 10px;}
+.prose p{margin:0 0 18px;}
+.prose ul,.prose ol{margin:0 0 20px;padding-left:22px;}
+.prose li{margin-bottom:8px;}
+.prose a{color:var(--cobalt);}
+.prose table{width:100%;border-collapse:collapse;margin:8px 0 24px;font-size:16px;}
+.prose th,.prose td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;}
+.prose th{background:var(--chalk);font-weight:700;}
+.answer-box{border-left:4px solid var(--ember);background:var(--chalk);padding:18px 22px;border-radius:0 var(--radius) var(--radius) 0;margin:0 0 28px;}
+.answer-box strong{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);margin-bottom:6px;}
+.meta-line{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);margin-top:20px;letter-spacing:.04em;}
+.note{font-size:15px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:16px;margin-top:36px;}
+.faq{padding:24px 0 72px;background:var(--paper);}
+.faq .inner{max-width:760px;}
+.faq h2{font-size:clamp(24px,2.6vw,32px);margin:0 0 20px;}
+.faq details{border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff;}
+.faq summary{cursor:pointer;font-weight:700;font-size:18px;color:var(--ink);}
+.faq details p{margin:12px 0 0;font-size:17px;line-height:1.65;color:var(--ink-soft);}
+.related{padding:0 0 72px;background:var(--paper);}
+.related .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1000px;}
+.related a.card{display:block;border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--ink);background:#fff;}
+.related a.card span{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);}
+.related a.card h3{font-size:18px;margin:8px 0 0;line-height:1.3;}
+.cta-simple{padding:64px 0;background:var(--void);color:#fff;text-align:center;}
+.cta-simple h2{color:#fff;font-size:clamp(26px,3vw,38px);margin:0 0 22px;}
+@media (max-width:640px){.page-hero{padding:120px 0 40px;}.prose{font-size:17px;}.prose table{font-size:14px;display:block;overflow-x:auto;}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://zielit.com/#organization",
+   "name": "Zielit",
+   "url": "https://zielit.com/",
+   "logo": "https://zielit.com/assets/logo.png",
+   "email": "info@zielit.com"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://zielit.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Capabilities",
+     "item": "https://zielit.com/capabilities.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AI governance for marketing",
+     "item": "https://zielit.com/ai-governance.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is AI governance in marketing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the set of documented rules and records that control how AI tools are used in marketing — what data they can access, which outputs require human review, how AI use is disclosed, who owns each use case, and which laws apply."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the EU AI Act apply to marketing AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It can, if you place AI systems on the EU market or their output is used in the EU. Most marketing uses are not classed as high-risk, but transparency duties (for example around chatbots and AI-generated content) and the Act's general obligations still matter. Each use case should be mapped individually."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do US privacy laws affect AI in marketing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. State privacy laws such as the CCPA and the Texas Data Privacy and Security Act govern the personal data AI tools process, and several include rights related to profiling or automated decision-making."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What should an AI governance policy for marketing include?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An inventory of AI use cases, allowed data per use, human-review requirements, disclosure rules, logging, named owners, a review schedule, and a mapping of each use to the regulations it touches."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you replace people with AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. We use AI to draft, score and route — and a person reviews anything AI drafts or scores before it reaches a customer."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://zielit.com/ai-governance.html#service",
+   "name": "AI Governance for Marketing",
+   "serviceType": "AI governance",
+   "description": "AI governance for marketing teams: transparency, human review, data stewardship and compliance mapping for every AI tool in your funnel, mapped to GDPR, CCPA and the EU AI Act.",
+   "provider": {
+    "@id": "https://zielit.com/#organization"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "url": "https://zielit.com/ai-governance.html"
+  }
+ ]
+}
+</script>
+</head>
+<body class="page-sub">
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-full-light.svg" alt="Zielit — one marketing solution" style="height:34px; width:auto;">
+    </a>
+    <nav class="nav-links">
+      <a href="capabilities.html" class="active">Capabilities</a>
+      <a href="industries.html">Industries</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta desktop-only">
+      <a href="mailto:info@zielit.com" class="btn btn-ghost">info@zielit.com</a>
+      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu"><a href="capabilities.html" class="active">Capabilities</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<main>
+<section class="page-hero"><div class="container"><div class="section-head">
+<div class="crumbs"><a href="index.html">Home</a> / <a href="capabilities.html">Capabilities</a></div>
+<span class="eyebrow">Capability · AI Governance</span>
+<h1>AI governance for marketing</h1>
+<p class="lead">The oversight layer for the AI in your funnel: what it's allowed to touch, who reviews it, and how you can prove that to a regulator or a client.</p>
+
+</div></div></section>
+<section class="prose-wrap"><div class="container"><div class="prose">
+
+<div class="answer-box"><strong>In short</strong>AI governance in marketing is a documented set of rules for every AI tool that drafts copy, scores leads or routes replies: what data it may use, which outputs a person must review, how its use is disclosed, and which regulations it touches. Zielit ships every AI touchpoint it sets up with that record.</div>
+
+<h2>The four pillars</h2>
+<ul>
+<li><strong>Transparency.</strong> Every AI-assisted step is logged and disclosed — no black-box copy or scoring your team can't explain.</li>
+<li><strong>Human oversight.</strong> A person reviews anything AI drafts or scores before it reaches a customer.</li>
+<li><strong>Data stewardship.</strong> AI tools only see the data your <a href="privacy-assessment.html">privacy assessment</a> says they're allowed to.</li>
+<li><strong>Compliance mapping.</strong> Every AI use case is mapped to the regulation it touches — including GDPR, the CCPA and the EU AI Act — and kept current as the rules change.</li>
+</ul>
+
+<h2>How it runs: map risk → set guardrails → audit</h2>
+<ol>
+<li><strong>Map risk.</strong> Inventory every AI use in the funnel: copy drafting, personalization, lead scoring, reply routing, chat. Note what data each touches and what decisions it influences.</li>
+<li><strong>Set guardrails.</strong> For each use: allowed data, required human review, disclosure, logging, and an owner.</li>
+<li><strong>Audit.</strong> Check on a schedule that the guardrails are followed, and update the map when a tool, a use or a rule changes.</li>
+</ol>
+
+<h2>The questions it prepares you for</h2>
+<p>Who reviewed this output? What customer data did the model see? Could you explain why this lead was scored the way it was? Is the use covered by your privacy notice? These are the questions boards, enterprise clients and regulators increasingly ask — and they're much easier to answer from a record kept at the time than reconstructed later.</p>
+
+<h2>Enablement and governance together</h2>
+<p>Zielit does both: <a href="ai-enablement.html">AI enablement</a> puts AI to work in your tools; governance makes sure a drafting tool never quietly becomes a decision-maker.</p>
+
+</div></div></section>
+<section class="faq"><div class="container"><div class="inner">
+<h2>Frequently asked questions</h2>
+<details><summary>What is AI governance in marketing?</summary><p>It is the set of documented rules and records that control how AI tools are used in marketing — what data they can access, which outputs require human review, how AI use is disclosed, who owns each use case, and which laws apply.</p></details>
+<details><summary>Does the EU AI Act apply to marketing AI?</summary><p>It can, if you place AI systems on the EU market or their output is used in the EU. Most marketing uses are not classed as high-risk, but transparency duties (for example around chatbots and AI-generated content) and the Act's general obligations still matter. Each use case should be mapped individually.</p></details>
+<details><summary>Do US privacy laws affect AI in marketing?</summary><p>Yes. State privacy laws such as the CCPA and the Texas Data Privacy and Security Act govern the personal data AI tools process, and several include rights related to profiling or automated decision-making.</p></details>
+<details><summary>What should an AI governance policy for marketing include?</summary><p>An inventory of AI use cases, allowed data per use, human-review requirements, disclosure rules, logging, named owners, a review schedule, and a mapping of each use to the regulations it touches.</p></details>
+<details><summary>Do you replace people with AI?</summary><p>No. We use AI to draft, score and route — and a person reviews anything AI drafts or scores before it reaches a customer.</p></details>
+</div></div></section>
+<section class="related"><div class="container">
+<div class="grid">
+<a class="card" href="ai-governance-checklist-marketing.html"><span>Insight</span><h3>An AI governance checklist for marketing teams</h3></a>
+<a class="card" href="ai-enablement.html"><span>Capability</span><h3>AI Enablement</h3></a>
+<a class="card" href="privacy-governance.html"><span>Capability</span><h3>Privacy Governance</h3></a>
+</div></div></section>
+<section class="cta-simple"><div class="container">
+<h2>Want this run for your program?</h2>
+<a href="contact.html" class="btn btn-primary">Start a conversation</a>
+</div></section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<div class="footer-brand">
+<img src="assets/logo-full-light.svg" alt="Zielit" style="height:26px; margin-bottom:16px;">
+<p>A data-driven marketing practice running email, phone, and DM campaigns — checked for privacy, governed where AI is involved.</p>
+</div>
+<div>
+<h5>Capabilities</h5>
+<ul>
+<li><a href="email-marketing.html">Email Marketing</a></li>
+<li><a href="phone-marketing.html">Phone Marketing</a></li>
+<li><a href="dm-marketing.html">DM Marketing</a></li>
+<li><a href="privacy-assessment.html">Privacy Assessment</a></li>
+<li><a href="privacy-governance.html">Privacy Governance</a></li>
+<li><a href="ai-enablement.html">AI Enablement</a></li>
+<li><a href="ai-governance.html">AI Governance</a></li>
+</ul>
+</div>
+<div>
+<h5>Company</h5>
+<ul>
+<li><a href="about.html">About us</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="capabilities.html#process">Process</a></li>
+<li><a href="about.html#careers">Careers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5>Contact</h5>
+<ul>
+<li><a href="mailto:info@zielit.com">info@zielit.com</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© <span id="year">2026</span> Zielit. All rights reserved.</span>
+<span>One marketing solution.</span>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

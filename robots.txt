@@ -1,4 +1,37 @@
+# zielit.com robots.txt
+# All crawlers may index the site, including search and AI-assistant crawlers.
 User-agent: *
+Allow: /
+
+# Explicitly welcome the crawlers behind Copilot/Bing, Gemini/Google, Claude and ChatGPT search.
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://zielit.com/sitemap.xml
